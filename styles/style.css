@@ -1,0 +1,743 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  list-style-type: none;
+}
+:root {
+  --bg-main-color: #0a0a0b;
+  --text-main-color: #ffffff;
+  --btn-bg-color: #306ad9;
+  --btn-bg-color-hover: #4177dc;
+  --btn-bg-color-active: #608ce2;
+  --icon-color: #babec4;
+}
+body {
+  font-family: "Exo Regular";
+  color: var(--text-main-color);
+  background-color: var(--bg-main-color);
+  overflow-x: hidden;
+}
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+/* --------------------- header started ------------------------------ */
+header {
+  width: 100%;
+  height: auto;
+}
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+}
+.nav__list--item {
+  list-style-type: none;
+}
+.nav__list--item-link {
+  text-decoration: none;
+  color: var(--text-main-color);
+}
+.nav__list--item-link:hover {
+  color: var(--icon-color);
+}
+.active {
+  color: var(--btn-bg-color-hover);
+  text-shadow: 0px 0px 32px #346dda;
+}
+/* --------------------- header ended ------------------------------ */
+/* --------------------- into section started ---------------------- */
+.into {
+  width: 100%;
+  height: auto;
+}
+.intro::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 500px;
+  height: 500px;
+  left: -138px;
+  top: -28px;
+  background: rgba(55, 74, 109, 0.5);
+  filter: blur(90px);
+}
+
+.intro::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  right: -20px;
+  top: 404px;
+
+  background: rgba(55, 74, 109, 0.5);
+  filter: blur(90px);
+}
+.wrapper {
+  text-align: center;
+}
+.intro__title {
+  margin-top: 72px;
+  font-family: "Exo SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 140%;
+}
+.intro__subtitle {
+  margin-top: 20px;
+  font-family: "Exo SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+}
+.wrapper span {
+  font-family: "Exo SemiBold";
+  font-weight: 400px;
+  font-size: 16px;
+  display: block;
+  margin-top: 8px;
+  color: var(--icon-color);
+}
+.intro__car {
+  margin-top: 48px;
+  width: 380px;
+  height: 222.22px;
+}
+
+.intro__info {
+  width: 406px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px auto;
+  height: 104px;
+  text-align: center;
+}
+.text {
+  margin-top: 16px;
+  height: 34px;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: #ffffff;
+}
+.info__text {
+  margin-top: 4px;
+  width: 89px;
+  height: 18px;
+  font-family: "Exo regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 140%;
+  color: #888b91;
+}
+.intro__start {
+  width: 90px;
+  height: 90px;
+  font-weight: 500;
+  font-size: 14px;
+  margin: 91px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid #02db8a;
+  filter: drop-shadow(0px 0px 16px #02db8a);
+  border-radius: 50%;
+  cursor: pointer;
+}
+.intro__start h2 {
+  width: 70px;
+  height: 70px;
+  border: 2px solid #099260;
+  font-size: 14px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2 ease;
+}
+.intro__start:hover h2 {
+  filter: drop-shadow(0px 0px 16px #02db8a);
+}
+/* --------------------- into section finished ---------------------- */
+/* --------------------- about section started ----------------------- */
+.about {
+  padding: 72px 0 88px;
+  height: auto;
+}
+.about__container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.about__left {
+  position: relative;
+}
+.about__container--img {
+  width: 480px;
+  min-height: 320.14px;
+  background: url(about.png);
+  border-radius: 8px;
+}
+.about__container--comment {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 197px;
+  height: 104px;
+  right: 0;
+  top: 268px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+}
+.about__container--comment h2 {
+  width: 67px;
+  height: 28px;
+
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+
+  color: #ffffff;
+}
+.about__container--comment h3 {
+  width: 157px;
+  height: 36px;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.about__right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: left;
+  width: 401px;
+  height: 278px;
+}
+
+.about__right h2 {
+  width: 209px;
+  height: 68px;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: #f1f2f3;
+}
+.about__right h3 {
+  width: 401px;
+  height: 88px;
+  left: 723px;
+  top: 139px;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+.about__right button {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 14px 32px;
+  gap: 10px;
+  width: 149px;
+  height: 50px;
+  background: #4177dc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #ffffff;
+}
+/* --------------------- about section finished --------------------- */
+/* --------------------- popular section started --------------------- */
+.popular {
+}
+.wrapper__popular {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.popular__title {
+  width: 278px;
+  margin-top: 72px;
+  height: 68px;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  color: #f1f2f3;
+}
+
+.popular__cards {
+  margin-top: 64px;
+  display: flex;
+  width: 870px;
+  justify-content: space-between;
+}
+.popular__card {
+  width: 258px;
+  position: relative;
+  height: 328px;
+  background: #111213;
+  border-radius: 20px;
+  overflow: hidden;
+  padding: 32px 24px 24px;
+  transition: all 0.7s;
+}
+.popular__card:hover {
+  transform: scale(1.05);
+  background-image: url("../images/galaxy-background-design_2001751.jpg");
+}
+.light {
+  position: absolute;
+  width: 190px;
+  height: 190px;
+  left: -80px;
+  top: -48px;
+  background: rgba(55, 74, 109, 0.5);
+  filter: blur(60px);
+}
+.popular__card h4 {
+  z-index: 1;
+  position: relative;
+  width: 90px;
+  height: 34px;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: #f1f2f3;
+}
+.popular__card p {
+  z-index: 1;
+  position: relative;
+  width: auto;
+  height: 22px;
+  font-family: "Exo regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #babec4;
+}
+.popular__card--img {
+  margin-top: 12px;
+  position: relative;
+  z-index: 1;
+  transform: translateX(30px);
+}
+
+.popular__card--info {
+  width: 163px;
+  height: 44px;
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 140%;
+  flex-wrap: wrap;
+}
+.popular__card h3 {
+  margin-top: 31px;
+  width: 100px;
+  height: 40px;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+}
+.popular__card--link {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.slide__item {
+  text-decoration: none;
+  margin-right: 8px;
+}
+.slide {
+  margin-top: 40px;
+  margin-bottom: 48px;
+}
+/* --------------------- popular section finished --------------------- */
+/* --------------------- features section started --------------------- */
+.features {
+  height: auto;
+}
+.features__wrapper {
+  text-align: center;
+  position: relative;
+}
+.features__title {
+  margin-top: 72px;
+  height: 34px;
+
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  position: relative;
+  z-index: 1;
+
+  color: #f1f2f3;
+}
+.features__image {
+  position: relative;
+  z-index: 1;
+  margin: 64px 0px;
+  width: 200px;
+  height: 462.53px;
+}
+.features__bgc {
+  position: absolute;
+  width: 650px;
+  height: 705.42px;
+  left: 98px;
+  top: -48px;
+}
+
+.features__items {
+  position: absolute;
+  padding: 12px;
+  width: 127px;
+  height: 92px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(8px);
+  border-radius: 20px;
+  text-align: center;
+}
+.item-1 {
+  z-index: 2;
+  left: 350px;
+  top: 161px;
+}
+.item-2 {
+  z-index: 2;
+  left: 580px;
+  top: 225px;
+}
+.item-3 {
+  z-index: 2;
+  left: 350px;
+  bottom: 111px;
+}
+
+.features__items-title {
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: #ffffff;
+}
+.features__items:hover {
+  background-color: rgba(5, 33, 64, 0.1);
+}
+.features__items-text {
+  text-align: center;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  text-align: center;
+  color: #ffffff;
+}
+/* --------------------- features section finished --------------------- */
+/* --------------------- luxury section started --------------------- */
+.luxury {
+  padding-top: 72px;
+}
+.luxury__wrapper {
+  align-items: center;
+}
+.luxury__title {
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  text-align: center;
+  color: #f1f2f3;
+}
+
+.luxury__fillter {
+  margin: 0 auto;
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+
+  width: 300px;
+  height: 61px;
+}
+.luxury__fillter--item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 52px;
+  height: 52px;
+  left: 572px;
+  top: 82px;
+  background: #111213;
+  border-radius: 16px;
+}
+.active__fillter {
+  background: #4177dc;
+}
+.luxury__fillter--item-link {
+  text-decoration: none;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #f1f2f3;
+}
+.luxury__fillter--item:hover {
+  background: #000;
+}
+
+.tesla {
+  transform: translateY(6px);
+}
+.fillter__cards {
+  width: 886px;
+  height: 700px;
+  margin: 72px auto;
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+}
+.fillter__card {
+  width: 248px;
+  height: 312px;
+  margin: 0 70px 72px 0px;
+}
+.fillter__card:nth-child(3) {
+  margin-right: 0px;
+}
+.popular__card--img {
+  transform: none;
+  margin-top: 12px;
+}
+.luxury__light {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  left: 30px;
+  top: 60px;
+
+  background: rgba(55, 74, 109, 0.5);
+  filter: blur(60px);
+}
+/* --------------------- luxury section finished --------------------- */
+/* --------------------- Offer section started --------------------- */
+.offer {
+  background: no-repeat url("../images/subscribe-bg.png") center,
+    linear-gradient(
+      180deg,
+      rgba(10, 10, 11, 0.2) 0%,
+      rgba(10, 10, 11, 0.5) 100%
+    );
+  background-size: cover;
+}
+
+.offer_wrapper {
+  width: 900px;
+  margin: 140px auto 0px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.subsicribe {
+  padding: 50px;
+}
+.subsicribe h1 {
+  width: 312px;
+  height: 68px;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 140%;
+  color: #f1f2f3;
+}
+.subsicribe h2 {
+  margin-top: 32px;
+  width: 375px;
+  height: 66px;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #babec4;
+}
+.subsicribe a {
+  display: block;
+  margin-top: 48px;
+  text-decoration: none;
+  padding: 14px 32px;
+  gap: 10px;
+  width: 174px;
+  height: 50px;
+  background: #4177dc;
+  border-radius: 4px;
+  font-family: "Exo Regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  color: #ffffff;
+}
+.offer_wrapper img {
+  width: 450px;
+  height: 201.99px;
+}
+/* --------------------- Offer section finished --------------------- */
+/* --------------------- Logos section started --------------------- */
+.logos {
+  padding: 76px 0;
+}
+.logos__list {
+  display: flex;
+  width: 900px;
+  margin: 0px auto;
+  justify-content: space-around;
+  align-items: center;
+}
+.logos__list--item {
+  width: 50px;
+  height: 57px;
+  display: flex;
+  align-items: center;
+}
+
+/* --------------------- Logos section finished --------------------- */
+/* --------------------- Footer section finished --------------------- */
+footer {
+  height: auto;
+  overflow: hidden;
+}
+.footer-elements {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  margin: 60px 0px;
+  overflow: hidden;
+}
+
+.footer-info {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer-logo {
+  width: 110px;
+  height: 34px;
+  margin-bottom: 20px;
+}
+
+.footer-nav-list {
+  list-style-type: none;
+}
+.footer-item {
+  margin: 12px 0px;
+}
+
+.footer-item-link {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #babec4;
+}
+
+.social img {
+  margin: 10px 10px 10px;
+}
+
+.social h3 {
+  padding-left: 10px;
+}
+
+.end {
+  margin-top: 98px;
+  text-align: center;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 140%;
+  color: #888b91;
+}
+
+footer {
+  padding-bottom: 40px;
+  position: relative;
+  height: 395px;
+}
+
+footer::before {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: 1524px;
+  top: 37px;
+
+  background: rgba(55, 74, 109, 0.5);
+  filter: blur(90px);
+}
+
+footer::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 400px;
+  left: -24px;
+  top: -137px;
+
+  background: rgba(55, 74, 109, 0.5);
+  filter: blur(90px);
+}
+/* --------------------- Footer section finished --------------------- */
